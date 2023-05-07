@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="DeltaDentalInsurance(failed)">
+    <classes>
+      <class name="com.automation.dental.tests.LoginErrorValidation">
+        <methods>
+          <include name="LoginWithValidEmail" invocation-numbers="0"/>
+          <include name="launchApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- com.automation.dental.tests.LoginErrorValidation -->
+    </classes>
+  </test> <!-- DeltaDentalInsurance(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
