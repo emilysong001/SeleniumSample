@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test thread-count="5" name="Error Validations Test">
+    <test thread-count="2" name="Login Error Validations Test">
         <classes>
             <class name="com.automation.dental.tests.LoginErrorValidation"/>
         </classes>
     </test>
-
-    <!--<test thread-count="5" name="Login Test">
+    <test thread-count="2" name="Register Error Validations Test">
         <classes>
-            <class name="com.automation.dental.tests.Demo"/>
+            <class name="com.automation.dental.tests.RegisterErrorValidation"/>
         </classes>
-    </test>-->
+    </test>
+    <test thread-count="2" name="Register Page Validations Test">
+        <classes>
+            <class name="com.automation.dental.tests.RegisterPageValidation"/>
+        </classes>
+    </test>
+    <test thread-count="2" name="Search EPO Dentist Test">
+        <classes>
+            <class name="com.automation.dental.tests.SearchEPODentist"/>
+        </classes>
+    </test>
 </suite> <!-- Suite -->

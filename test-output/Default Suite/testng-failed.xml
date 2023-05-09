@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default Suite]">
-  <test name="DeltaDentalInsurance(failed)">
+  <test name="DeltaDentalMIInsurance(failed)">
     <classes>
-      <class name="com.automation.dental.tests.LoginErrorValidation">
+      <class name="com.automation.dental.tests.SearchEPODentist">
         <methods>
-          <include name="LoginWithValidEmail" invocation-numbers="0"/>
-          <include name="launchApplication"/>
-          <include name="closeApplication"/>
+          <include name="searchEPODentistWithAllInformation"/>
         </methods>
-      </class> <!-- com.automation.dental.tests.LoginErrorValidation -->
+      </class> <!-- com.automation.dental.tests.SearchEPODentist -->
     </classes>
-  </test> <!-- DeltaDentalInsurance(failed) -->
+  </test> <!-- DeltaDentalMIInsurance(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

@@ -1,25 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="24082" started-at="2023-05-07T01:14:15Z" finished-at="2023-05-07T01:14:39Z">
+  <suite name="All Test Suite" duration-ms="114771" started-at="2023-05-08T23:43:44Z" finished-at="2023-05-08T23:45:39Z">
     <groups>
     </groups>
-    <test name="DeltaDentalInsurance" duration-ms="24082" started-at="2023-05-07T01:14:15Z" finished-at="2023-05-07T01:14:39Z">
-      <class name="com.automation.dental.tests.MemberToolsValiation">
-        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.automation.dental.tests.MemberToolsValiation@1efbd816]" name="launchApplication" is-config="true" duration-ms="7619" started-at="2023-05-06T21:14:15Z" finished-at="2023-05-06T21:14:23Z">
+    <test name="Login Error Validations Test" duration-ms="44122" started-at="2023-05-08T23:43:44Z" finished-at="2023-05-08T23:44:29Z">
+      <class name="com.automation.dental.tests.LoginErrorValidation">
+        <test-method status="PASS" signature="LoginWithEmptyEmailAndPassword()[pri:0, instance:com.automation.dental.tests.LoginErrorValidation@174d20a]" name="LoginWithEmptyEmailAndPassword" duration-ms="12245" started-at="2023-05-08T19:43:44Z" finished-at="2023-05-08T19:43:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="member()[pri:0, instance:com.automation.dental.tests.MemberToolsValiation@1efbd816]" name="member" duration-ms="16318" started-at="2023-05-06T21:14:23Z" finished-at="2023-05-06T21:14:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- member -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.MemberToolsValiation@1efbd816]" name="closeApplication" is-config="true" duration-ms="132" started-at="2023-05-06T21:14:39Z" finished-at="2023-05-06T21:14:39Z">
+        </test-method> <!-- LoginWithEmptyEmailAndPassword -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.LoginErrorValidation@174d20a]" name="closeApplication" is-config="true" duration-ms="712" started-at="2023-05-08T19:43:57Z" finished-at="2023-05-08T19:43:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.automation.dental.tests.MemberToolsValiation -->
-    </test> <!-- DeltaDentalInsurance -->
-  </suite> <!-- Default Suite -->
+        <test-method status="PASS" signature="LoginWithInvalidEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:com.automation.dental.tests.LoginErrorValidation@174d20a]" name="LoginWithInvalidEmailAndPassword" duration-ms="14367" started-at="2023-05-08T19:43:57Z" data-provider="getData" finished-at="2023-05-08T19:44:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[b@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidEmailAndPassword -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.LoginErrorValidation@174d20a]" name="closeApplication" is-config="true" duration-ms="668" started-at="2023-05-08T19:44:12Z" finished-at="2023-05-08T19:44:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="LoginWithInvalidEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:com.automation.dental.tests.LoginErrorValidation@174d20a]" name="LoginWithInvalidEmailAndPassword" duration-ms="15433" started-at="2023-05-08T19:44:12Z" data-provider="getData" finished-at="2023-05-08T19:44:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[acbcdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidEmailAndPassword -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.LoginErrorValidation@174d20a]" name="closeApplication" is-config="true" duration-ms="680" started-at="2023-05-08T19:44:28Z" finished-at="2023-05-08T19:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.automation.dental.tests.LoginErrorValidation -->
+    </test> <!-- Login Error Validations Test -->
+    <test name="Register Error Validations Test" duration-ms="21108" started-at="2023-05-08T23:44:29Z" finished-at="2023-05-08T23:44:50Z">
+      <class name="com.automation.dental.tests.RegisterErrorValidation">
+        <test-method status="PASS" signature="verifyRegisterWithEmptyInformation()[pri:0, instance:com.automation.dental.tests.RegisterErrorValidation@58651fd0]" name="verifyRegisterWithEmptyInformation" duration-ms="9497" started-at="2023-05-08T19:44:29Z" finished-at="2023-05-08T19:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithEmptyInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.RegisterErrorValidation@58651fd0]" name="closeApplication" is-config="true" duration-ms="701" started-at="2023-05-08T19:44:38Z" finished-at="2023-05-08T19:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="verifyRegisterWithInvalidInformation(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.dental.tests.RegisterErrorValidation@58651fd0]" name="verifyRegisterWithInvalidInformation" duration-ms="10220" started-at="2023-05-08T19:44:39Z" data-provider="getRegisterData" finished-at="2023-05-08T19:44:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emily]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Song]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10/20/2000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithInvalidInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.RegisterErrorValidation@58651fd0]" name="closeApplication" is-config="true" duration-ms="689" started-at="2023-05-08T19:44:49Z" finished-at="2023-05-08T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.automation.dental.tests.RegisterErrorValidation -->
+    </test> <!-- Register Error Validations Test -->
+    <test name="Register Page Validations Test" duration-ms="9323" started-at="2023-05-08T23:44:50Z" finished-at="2023-05-08T23:44:59Z">
+      <class name="com.automation.dental.tests.RegisterPageValidation">
+        <test-method status="PASS" signature="verifyLoginRegisterPageSuccessfully()[pri:0, instance:com.automation.dental.tests.RegisterPageValidation@1753acfe]" name="verifyLoginRegisterPageSuccessfully" duration-ms="8634" started-at="2023-05-08T19:44:50Z" finished-at="2023-05-08T19:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginRegisterPageSuccessfully -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.RegisterPageValidation@1753acfe]" name="closeApplication" is-config="true" duration-ms="689" started-at="2023-05-08T19:44:58Z" finished-at="2023-05-08T19:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.automation.dental.tests.RegisterPageValidation -->
+    </test> <!-- Register Page Validations Test -->
+    <test name="Search EPO Dentist Test" duration-ms="40199" started-at="2023-05-08T23:44:59Z" finished-at="2023-05-08T23:45:39Z">
+      <class name="com.automation.dental.tests.SearchEPODentist">
+        <test-method status="PASS" signature="searchEPODentistWithAllInformation()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithAllInformation" duration-ms="5352" started-at="2023-05-08T19:44:59Z" finished-at="2023-05-08T19:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithAllInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="684" started-at="2023-05-08T19:45:04Z" finished-at="2023-05-08T19:45:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="searchEPODentistWithBasicInformation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithBasicInformation" duration-ms="5381" started-at="2023-05-08T19:45:05Z" data-provider="searchCredentials" finished-at="2023-05-08T19:45:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[48375]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Novi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Michigan]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithBasicInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="660" started-at="2023-05-08T19:45:10Z" finished-at="2023-05-08T19:45:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="searchEPODentistWithBasicInformation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithBasicInformation" duration-ms="4730" started-at="2023-05-08T19:45:11Z" data-provider="searchCredentials" finished-at="2023-05-08T19:45:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[48374]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Farmington]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Michigan]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithBasicInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="665" started-at="2023-05-08T19:45:16Z" finished-at="2023-05-08T19:45:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="searchEPODentistWithBasicInformation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithBasicInformation" duration-ms="5052" started-at="2023-05-08T19:45:16Z" data-provider="searchCredentials" finished-at="2023-05-08T19:45:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Novi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Michigan]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithBasicInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="675" started-at="2023-05-08T19:45:22Z" finished-at="2023-05-08T19:45:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="searchEPODentistWithEmptyInformation()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithEmptyInformation" duration-ms="4341" started-at="2023-05-08T19:45:22Z" finished-at="2023-05-08T19:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithEmptyInformation -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="692" started-at="2023-05-08T19:45:27Z" finished-at="2023-05-08T19:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="searchEPODentistWithOnlyDentistName(java.lang.String)[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithOnlyDentistName" duration-ms="5582" started-at="2023-05-08T19:45:27Z" data-provider="dentistNameCredentials" finished-at="2023-05-08T19:45:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithOnlyDentistName -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="672" started-at="2023-05-08T19:45:33Z" finished-at="2023-05-08T19:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="searchEPODentistWithOnlyDentistName(java.lang.String)[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="searchEPODentistWithOnlyDentistName" duration-ms="5047" started-at="2023-05-08T19:45:33Z" data-provider="dentistNameCredentials" finished-at="2023-05-08T19:45:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Song]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEPODentistWithOnlyDentistName -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.automation.dental.tests.SearchEPODentist@51565ec2]" name="closeApplication" is-config="true" duration-ms="665" started-at="2023-05-08T19:45:39Z" finished-at="2023-05-08T19:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.automation.dental.tests.SearchEPODentist -->
+    </test> <!-- Search EPO Dentist Test -->
+  </suite> <!-- All Test Suite -->
 </testng-results>

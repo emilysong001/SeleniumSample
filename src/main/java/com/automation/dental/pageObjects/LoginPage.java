@@ -19,30 +19,53 @@ public class LoginPage extends AbstractComponent {
     }
 
     //Page Factory
-    @FindBy(id = "usernameInput")
+    @FindBy(id = "userId")
     public WebElement userName;
 
-    @FindBy(id = "passwordInput")
+    @FindBy(id = "password")
     public WebElement passWord;
 
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement submit;
+    //@FindBy(xpath = "//button[@type='submit']")
+    @FindBy(id="landingBtn2")
+    public WebElement login;
 
-    @FindBy(id = "error-message")
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement alertErrorMessage;
+
+    @FindBy(xpath = "//div[@class='api-error-mesg']")
     public WebElement errorMessage;
 
-    By errorMessageBy = By.id("error-message");
+    By errorMessageBy = By.xpath("//div[@class='api-error-mesg']");
+
+    @FindBy(id = "landingLink2")
+    public WebElement MemberPortalRegister;
+
+    public void loginApplicationWithEmptyUserNamePassword() {
+        waitForElementToAppear(login);
+        login.click();
+    }
 
     public void loginApplicationWithInvalidUserName(String userName, String passWord) {
+        waitForElementToAppear(this.userName);
         this.userName.sendKeys(userName);
         this.passWord.sendKeys(passWord);
-        submit.click();
+        login.click();
+    }
+
+    public String getAlertErrorMessage() {
+        waitForElementToAppear(alertErrorMessage);
+        return alertErrorMessage.getText();
     }
 
     public String getErrorMessage() {
         waitForElementToAppear(errorMessage);
-        //waitForElementToAppear(errorMessageBy);
         return errorMessage.getText();
+    }
+
+    public RegisterPage goToMemberPortalRegisterPage(){
+        MemberPortalRegister.click();
+        RegisterPage registerPage = new RegisterPage(driver);
+        return registerPage;
     }
 
 
