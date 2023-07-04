@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]">
-  <test name="Login Error Validations Test(failed)">
+<suite name="Failed suite [Default Suite]">
+  <test name="DeltaDentalMIInsurance(failed)">
     <classes>
-      <class name="com.automation.dental.tests.SearchEPODentist">
-        <methods>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- com.automation.dental.tests.SearchEPODentist -->
       <class name="com.automation.dental.tests.LoginErrorValidation">
         <methods>
-          <include name="LoginWithInvalidEmailAndPassword" invocation-numbers="0"/>
+          <include name="LoginWithEmptyEmailAndPassword"/>
           <include name="closeApplication"/>
         </methods>
       </class> <!-- com.automation.dental.tests.LoginErrorValidation -->
-      <class name="com.automation.dental.tests.RegisterErrorValidation">
-        <methods>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- com.automation.dental.tests.RegisterErrorValidation -->
-      <class name="com.automation.dental.tests.RegisterPageValidation">
-        <methods>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- com.automation.dental.tests.RegisterPageValidation -->
     </classes>
-  </test> <!-- Login Error Validations Test(failed) -->
-</suite> <!-- Failed suite [All Test Suite] -->
+  </test> <!-- DeltaDentalMIInsurance(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

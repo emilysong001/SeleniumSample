@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -31,6 +30,9 @@ public class BaseTest {
             driver = new ChromeDriver(option);
         } else if (browserName.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+        } else if (browserName.equalsIgnoreCase("IE")) {
+            WebDriverManager.iedriver().setup();
             driver = new EdgeDriver();
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

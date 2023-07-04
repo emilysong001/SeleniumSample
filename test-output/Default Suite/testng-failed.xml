@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default Suite]">
   <test name="DeltaDentalMIInsurance(failed)">
     <classes>
-      <class name="com.automation.dental.tests.SearchEPODentist">
+      <class name="com.automation.dental.tests.LoginErrorValidation">
         <methods>
-          <include name="searchEPODentistWithAllInformation"/>
+          <include name="LoginWithEmptyEmailAndPassword"/>
+          <include name="closeApplication"/>
         </methods>
-      </class> <!-- com.automation.dental.tests.SearchEPODentist -->
+      </class> <!-- com.automation.dental.tests.LoginErrorValidation -->
     </classes>
   </test> <!-- DeltaDentalMIInsurance(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
